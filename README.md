@@ -10,3 +10,17 @@ cd /net-snmp/
 make
 ```
 
+To manually build image in your machine:
+
+```
+git clone https://github.com/truthadjustr/net-snmp-builder.git
+cd net-snmp-builder/
+docker build -t mybuilder .
+```
+And then you can use your new image **mybuilder**.
+
+```
+docker run -it mybuilder bash
+cd /net-snmp
+```
+
